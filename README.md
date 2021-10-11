@@ -13,7 +13,7 @@ docker run -d \
            -e TZ=America/New_York \
            -p 8888:8888 \
            -v $PWD:/home/jovyan/work \
-           jupyter/scipy-notebook:lab-3.1.12 && \
+           jupyter/scipy-notebook:lab-3.1.14 && \
 sleep 5 && \
 docker logs jupyter-dlfs 2>&1 | grep "http://127.0.0.1" | tail -n 1 | awk '{print $2}'
 ```
